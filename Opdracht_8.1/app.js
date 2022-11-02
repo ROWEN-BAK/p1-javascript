@@ -4,21 +4,38 @@ let answer;
 let header = document.getElementById("answer");
 
 function plus() {
-answer = +number1.value + +number2.value;
-header.innerText = "Het antwoord is " + answer;
+    if (number1.value <= 0 || number2.value <= 0) {
+        header.innerText = "Helaas het getal is te laag!";
+      } else {
+        answer = +number1.value + +number2.value;
+        header.innerText = "Het antwoord is " + answer;
+      }
 }
 
 function minus() {
-    answer = +number1.value - +number2.value
-    header.innerText = "Het antwoord is " + answer;
+    if (number1.value <= 0 || number2.value <= 0) {
+        header.innerText = "Helaas het getal is te laag!";
+      } else {
+        answer = +number1.value - +number2.value;
+        header.innerText = "Het antwoord is " + answer;
+      }
 }
 
 function divide() {
-    answer = +number1.value / +number2.value
-    header.innerText = "Het antwoord is " + answer;
+    if (number1.value <= 0 || number2.value <= 0) {
+        header.innerText = "Helaas het getal is te laag!";
+      } else {
+        answer = +number1.value / +number2.value;
+        header.innerText = "Het antwoord is " + answer;
+      }
 }
 
 function multiply() {
-    answer = +number1.value * +number2.value
-    header.innerText = "Het antwoord is " + answer;
+    if (number1.value <= 0 || number2.value <= 0) {
+        header.innerText = "Helaas het getal is te laag!";
+      } else {
+        answer = +number1.value * +number2.value;
+        header.innerText = "Het antwoord is " + answer;
+      }
 }
+
